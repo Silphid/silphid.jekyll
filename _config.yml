@@ -2,14 +2,14 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 100 # it will paginate after this number
-language: 'en-uk'
+language: 'en-ca'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
 
 # Website info
-title: Ghost
-description: The professional publishing platform
+title: Silphid
+description: mindful software design
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
@@ -22,15 +22,17 @@ navigation: True # show the navbar links
 subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: tryghost # replace by your username
-facebook: ghost # replace by your username
+twitter: silphidcom
+facebook: silphidcom
+linkedin: mathieu-frenette-3428737
+github: silphid
 
 # Disqus
-disqus: False
-disqus_name: myjekyll # replace by your username
+disqus: true
+disqus_name: silphid
 
 # Google Analytics
-google_analytics: UA-69281367-1 # replace by your GA id
+google_analytics: UA-110208729-1
 
 # Permalinks
 permalink: /:title
@@ -79,6 +81,7 @@ production_url:  https://silphid.github.io/
 source_url:  https://github.com/silphid/silphid.github.io/
 
 exclude:
+  - .git
   - README.md
   - Rakefile
   - Gemfile
