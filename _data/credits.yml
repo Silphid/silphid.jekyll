@@ -1,0 +1,21 @@
+images:
+  - file: assets/images/covers/lobostudio-hamburg-221476.jpg
+    copyright: LoboStudio Hamburg
+    url: https://unsplash.com/photos/E3rMBrxqKRo
+
+  - file: assets/images/covers/olia-gozha-5719.jpg
+    copyright: Olia Gozha
+    url: https://unsplash.com/photos/ijzZru_5VUU
+
+  - file: assets/images/covers/mathew-schwartz-397471.jpg
+    copyright: Mathew Schwartz
+    url: https://unsplash.com/photos/sb7RUrRMaC4
+
+  - file: assets/images/covers/radek-grzybowski-195655.jpg
+    copyright: Radek Grzybowski
+    url: https://unsplash.com/photos/Q2FeZKcBRP0
+
+fonts:
+  - name: Jura
+    copyright: 2016 The Jura Font Project Authors (daniel@danieljohnson.name)
+    url: https://fonts.google.com/specimen/Jura

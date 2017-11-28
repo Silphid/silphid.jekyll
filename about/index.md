@@ -1,17 +1,39 @@
 ---
 layout: page
 current: about
-title: About
+title: About Me
 navigation: true
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/silphid-logo.png'
 class: page-template
 subclass: 'post page'
 ---
+Hey there!  My name is Mathieu Frenette.  I like to call myself a mindful software designer and I am passionate about design patterns, best practices, C#, Unity, reactive development, dependency injection.
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+In my personal life, I enjoy yoga, meditation, slacklining and... human relations! :)
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+# LVL Studio
+## Senior Software Designer
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+I'm currently working at LVL Studio as Senior Software Designer, leading our E2 initiative, a Unity-based platform for the rapid development of multiplatform Netflix-like video-centric applications.  As a personal project, I developed the [Silphid.Unity](http://github.com/silphid/silphid.unity) open-source MVVM framework, which is now used as foundation for E2.
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+I started at LVL in 2014 as Lead Software Developer on great projects, like Cineplex's iOS and Android app (using Xamarin) for which I developed the Proteus Framework, and then LeapFrog's Epic Android tablet (using Unity) and Invidi's Ads Targeting Platform (a big data system using Java).
+
+I then occupied the role of Director of Technology for 9 months, and I loved empowering the Dev, QA and IT teams in delivering exceptional products.  However, I was missing too much having my hands in code and the creative aspect of it, so I finally moved to the role of Senior Software Designer/Artchitect, to lead and design our E2 platform.
+
+# Simbioz
+## Director of Technology - Co-Founder - Lead Developer
+
+### C# .NET WPF WCF Linq SQL Server ADO.NET Entity Framework XML ASP.NET HTML 5 CSS 3 LESS jQuery Unity Direct3D Cg HLSL iOS OSX Objective-C Android Agile Refactoring Unit Testing Continuous Integration
+
+Designed, developed and deployed more than 60 highly interactive, large scale projects, over a 13 years period, for reknown client such as HP, Mazda, NASA, CBC/SRC, SAQ, National Bank, Montreal Biosphere, Canadian Space Agency, as well as numerous Canadian museums.
+
+Developed an artificial vision gesture-tracking input overlay for large screen, funded by the NRC, as well as the Fluid framework for the rapid development of highly interactive applications in XAML and WPF.
+
+[See portfolio](http://goo.gl/FwfsOR)
+
+# Antares Production
+## Founder - Game & Graphics Designer - Lead (and Only!) Developer
+### C++ C Assembly DOS4GW
+Designed and developed an innovative adventure and puzzle video game, boasting 30+ hours of play, 6 worlds to explore, 125 puzzles each with 3 levels of difficulty. Hired and supervised a composer for the creation of a 30 song soundtrack. Negociated with multiple publishers.
+
+Discover [Clone](/clone) here.

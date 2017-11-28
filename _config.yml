@@ -10,10 +10,10 @@ baseurl: /
 # Website info
 title: Silphid
 description: mindful software design
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+cover: assets/images/covers/lobostudio-hamburg-221476.jpg
+logo: assets/images/silphid-logo.png
+logo_dark: assets/images/silphid-logo-dark.png
+favicon: assets/images/silphid-icon.png
 production_url: https://myJekyll.github.io/jasper2/
 source_url: https://github.com/myJekyll/jasper2/
 
