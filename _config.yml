@@ -43,7 +43,7 @@ permalink: /:title
 # Tags' info in `_data/tags_info.yml`
 
 # gems and other configs
-plugins: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-minimagick]
 exclude: [vendor]
 
 feed:
@@ -90,3 +90,11 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - assets/images/_covers
+
+mini_magick:
+    thumbnail:
+        source: assets/images/_covers
+        destination: assets/images/covers
+        resize: "1200>"
+        gravity: "center"
