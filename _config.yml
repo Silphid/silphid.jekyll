@@ -93,8 +93,13 @@ exclude:
   - assets/images/_covers
 
 mini_magick:
-    thumbnail:
+    covers:
         source: assets/images/_covers
         destination: assets/images/covers
         resize: "1200>"
         gravity: "center"
+    thumb-covers:
+        source: assets/images/_covers
+        destination: assets/images/thumb/covers
+        resize: "120"
+        gravity: "center"        
