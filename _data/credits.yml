@@ -15,6 +15,18 @@ images:
     copyright: Radek Grzybowski
     url: https://unsplash.com/photos/Q2FeZKcBRP0
 
+  - file: assets/images/covers/jason-leung-370358
+    copyright: Jason Leung
+    url: https://unsplash.com/photos/ShoP4ESuIsY
+
+  - file: assets/images/covers/jussara-romao-335086.jpg
+    copyright: Jussara Romão
+    url: https://unsplash.com/photos/3cM5Vw3UjaY
+
+  - file: assets/images/covers/maxime-le-conte-des-floris-151374.jpg
+    copyright: Maxime Le Conte des Floris
+    url: https://unsplash.com/photos/8Pd8yCjjKIQ
+
 fonts:
   - name: Jura
     copyright: 2016 The Jura Font Project Authors (daniel@danieljohnson.name)
