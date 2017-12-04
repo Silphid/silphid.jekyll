@@ -1,0 +1,62 @@
+---
+layout: default
+current: page
+class: page-template
+disqus: false
+---
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+{% for author in site.data.authors %}
+{% if author[1].username == "mathieu" %}
+<header class="site-header outer" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
+    <div class="inner">
+        {% include site-nav.html %}
+        <div class="site-header-content">
+            {% if author[1].picture %}
+                <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}" />
+            {% endif %}
+            <h1 class="site-title">{{ author[1].name }}</h1>
+            {% if author[1].bio %}
+                <h2 class="author-bio">{{ author[1].bio }}</h2>
+            {% endif %}
+            <div class="author-meta">
+                {% if site.facebook %}
+                    <a class="social-link social-link-fb" href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">{% include facebook.html %}</a>
+                {% endif %}
+                {% if site.twitter %}
+                    <a class="social-link social-link-tw" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">{% include twitter.html %}</a>
+                {% endif %}
+                {% if site.linkedin %}
+                    <a class="social-link social-link-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">{% include linkedin.html %}</a>
+                {% endif %}
+                {% if site.github %}
+                <a class="social-link social-link-github" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">{% include github.html %}</a>
+                {% endif %}
+                <a class="social-link social-link-email" href="mailto:mathieu@this-domain.com" onmouseover="this.href=this.href.replace(/this-domain/g,'silphid');">{% include email-icon.html %}</a>
+            </div>
+        </div>
+    </div>
+</header>
+{% endif %}
+{% endfor %}            
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
+
+            <section class="post-full-content">
+                {{ content }}
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+{% include page-scripts.html %}

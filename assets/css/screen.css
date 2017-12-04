@@ -316,6 +316,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 1.6rem;
 }
 
+.social-link-linkedin svg {
+    height: 2.0rem !important;
+}
+
 .social-link-wb svg path {
     stroke: #fff;
 }

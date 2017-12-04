@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 current: about
 title: About Me
 cover: assets/images/covers/olia-gozha-5719.jpg
@@ -8,6 +8,7 @@ logo: 'assets/images/silphid-logo.png'
 class: page-template
 subclass: 'post page'
 ---
+
 Hey there!  My name is Mathieu Frenette and I like to call myself a mindful software designer!  I am passionate about design patterns, best practices, reactive development, dependency injection and, in my personal life, I enjoy cycling, yoga, some slacklining and... friends! :)
 
 ### LVL Studio
@@ -16,7 +17,9 @@ I'm currently working at LVL Studio as Senior Software Designer, leading our E2 
 
 I started at LVL in 2014 as Lead Software Developer on great projects, like Cineplex's iOS and Android app (using Xamarin) for which I developed the Proteus Framework, and then LeapFrog's Epic Android tablet (using Unity) and then Invidi's Ads Targeting Platform (a big data system using Java).
 
-I then occupied the role of Director of Technology for 9 months, and I loved empowering the Dev, QA and IT teams in delivering exceptional products.  However, I was badly missing getting my hands dirty with code, especially the creative aspect of it, so I finally moved to the role of Senior Software Designer/Artchitect, to lead and design our E2 platform.
+I then occupied the role of Director of Technology for 9 months, and I loved empowering the Dev, QA and IT teams in delivering exceptional products.  However, I was badly missing getting my hands dirty with code, especially the creative aspect of it, so I finally moved to the role of Senior Software Designer/Architect, to lead and design our E2 platform.
+
+> C# .NET Unity
 
 ### Simbioz
 #### Director of Technology - Co-Founder - Lead Developer
@@ -27,7 +30,7 @@ Developed an artificial vision gesture-tracking input overlay for large screen, 
 
 [See portfolio](http://goo.gl/FwfsOR)
 
-> C# .NET WPF WCF Linq SQL Server ADO.NET Entity Framework XML ASP.NET HTML 5 CSS 3 LESS jQuery Unity Direct3D Cg HLSL iOS OSX Objective-C Android Agile Refactoring Unit Testing Continuous Integration
+> C# .NET WPF WCF Linq SQL Server ADO.NET Entity Framework XML ASP.NET HTML 5 CSS 3 LESS jQuery Unity Direct3D Cg HLSL iOS OSX Objective-C Android Dependency-Injection Agile Refactoring Unit-Testing
 
 # Antares Production
 ## Founder - Game & Graphics Designer - Lead (and Only!) Developer
