@@ -3,8 +3,9 @@ ghost:
   name: Mathieu Frenette
   url_full: https://www.linkedin.com/in/mathieu-frenette-3428737/
   url: www.linkedin.com/in/mathieu-frenette-3428737
-  bio: Mindful software designer passionate about design patterns, best practices, C#, Unity, reactive development, dependency injection, yoga, meditation, slacklining and... human relations! :)
+  bio: Mindful software designer, passionate about design patterns, best practices, reactive extensions, dependency injection, C#, Unity, teaching and coaching!
   picture: assets/images/mathieu.jpg
   facebook: silphidcom
   twitter: silphidcom
   cover: assets/images/covers/olia-gozha-5719.jpg
+  permalink: about
