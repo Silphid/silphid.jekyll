@@ -27,6 +27,10 @@ images:
     copyright: Maxime Le Conte des Floris
     url: https://unsplash.com/photos/8Pd8yCjjKIQ
 
+  - file: assets/images/covers/mike-wilson-195744
+    copyright: Mike Wilson
+    url: https://unsplash.com/photos/rNbznfUV_y8
+
 fonts:
   - name: Jura
     copyright: 2016 The Jura Font Project Authors (daniel@danieljohnson.name)
