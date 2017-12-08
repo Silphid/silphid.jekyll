@@ -77,7 +77,7 @@ repo: silphid.github.io
 branch: master
 relative_source: /
 destination: ../silphid.github.io/
-production_url:  https://silphid.github.io/
+production_url:  http://silphid.com/
 source_url:  https://github.com/silphid/silphid.github.io/
 
 exclude:
