@@ -1,9 +1,15 @@
-<form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+<form method="POST" action="https://silphid.us17.list-manage.com/subscribe/post">
+
+    <input type="hidden" name="u" value="32cf9afb9da487ff0850eabc2">
+    <input type="hidden" name="id" value="7a8d7e82d4">
+    <input type="hidden" name="ht" value="d239afdfeee5be9f429e3c45531b2ca5be8bccf9:MTUxMzA4MjM2Mi4yMDE5">
+    <input type="hidden" name="mc_signupsource" value="hosted">
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input type="email" name="MERGE0" id="MERGE0" value="" placeholder="youremail@example.com" class="subscribe-input" autocapitalize="off" autocorrect="off">
+        <input type="text" name="MERGE1" id="MERGE1" value="" placeholder="First Name" class="subscribe-input">
+        <input type="text" name="MERGE2" id="MERGE2" value="" placeholder="Last Name" class="subscribe-input">
     </div>
-    <button class="" type="submit" {% unless site.subscribe %}disabled{% endunless %}><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+
+    <button class="" type="submit"><span>Subscribe</span></button>
 </form>
