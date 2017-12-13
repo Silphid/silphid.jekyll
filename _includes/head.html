@@ -1,6 +1,8 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.favicon }}" type="image/png" />
     <link rel="canonical" href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove: '/' }}" />
+    <link rel="alternate" type="application/rss+xml" title="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" href="{{'feed.xml' | relative_url}}" />
+    <meta name="generator" content="Jekyll 3.6.2" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
     {% if page.content and page.current == 'post' or page.current == 'about' %}
@@ -64,6 +66,3 @@
     	clientSecret: "f84a07a72b17"
     });
     </script> -->
-
-    <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" href="{{ site.baseurl }}feed.xml" />

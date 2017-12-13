@@ -46,6 +46,9 @@ permalink: /:title
 plugins: [jekyll-paginate, jekyll-feed, jekyll-minimagick]
 exclude: [vendor]
 
+# jekyll-feed options
+url: http://silphid.com
+author: Mathieu Frenette
 feed:
   path: feed.xml
 
@@ -77,8 +80,8 @@ repo: silphid.github.io
 branch: master
 relative_source: /
 destination: ../silphid.github.io/
-production_url:  http://silphid.com/
-source_url:  https://github.com/silphid/silphid.github.io/
+production_url: http://silphid.com/
+source_url: https://github.com/silphid/silphid.github.io/
 
 exclude:
   - .git
@@ -100,6 +103,6 @@ mini_magick:
         gravity: "center"
     thumb-covers:
         source: assets/images/_covers
-        destination: assets/images/thumb/covers
-        resize: "120"
-        gravity: "center"        
+        destination: assets/images/thumbs
+        resize: "144"
+        gravity: "center"
