@@ -16,17 +16,29 @@ Van Vogt proposes that, according to *non-Aristotelian logic*, objects should no
 
 Indeed. For instance, in software development, cultivating a keen sense of details is definitely a great asset. However, let's face it, we are not gifted with Gilbert Gosseyn's second brain, and neither can we embrace a highly complex system in our mind, all at once. We need to dissect, subdivide and simplify such complexity into manageable pieces, interfaced together through convenient *abstractions*.
 
-## But What *is* Abstraction?
+# But What *is* Abstraction?
 
 Abstraction, from the Latin *abs* (away from) and *trahere* (to draw), is the reduction of something to a set of essential characteristics.
 
 However, the notion of what should be considered essential highly depends on the *context*. Completely different characteristics might be drawn from the same entity in different contexts.
 
-Take John, our protagonist, comfortably sitting on a long chair on the beach, next to Mary, his loved one, sipping a {NameOfYourFavoriteCocktail} and reading a highly technical 600 page book about 3D programming. Mary raises her brown eyes from her book and asks him about what he is reading. As she is not technically-inclined and, by asking that question, cares more about John himself than the quirks of the third dimension, our hero intuitively abstracts all the maths, vectors and formulas away and simply replies: "A 3D programming book that will complement my professional skills and sky-rocket my career." But now, a little girl with curly hairs who was carving canals in the sand nearby and pourring water into them, just noticed John and also questions him on what he is reading. She is obviously neither tech-savvy nor concerned about John's future, so John abstracts all that away and simply answers: "A very complicated book that will allow me to create games with colourful objects and characters in it." As if the entire beach was conspiring against our hero peacefully reading his book, some tanned and muscular surfer walking by, board tucked under his arm, recognizes John as a former colleague and charges him with a loud and annoying "Hey Buddy! Still reading 3D stuff! What's this one about?" As that guy clearly knows about 3D and couldn't care less about the answer, John abstracts away all but the nitty gritty technical jargon: "It's about vertex and pixel shaders and how to optimize them in the context of photo-realistic real-time rendering." But now, John's patience is tried. He promptly salutes his old colleague, kisses his lover on the forehead and rushes back to his hotel room, asking the doorman not to be disturbed and emphasizing he wants to read quietly. As the doorman politely inquires on what he is reading, John pauses for a second and four hundred fifty milliseconds, carefully chooses the proper level of abstraction for the context and replies candidly: "A book!"
+Take *Liam*, some theoritical sample of a human being. While he boasts an `ICertifiedPublicAccountant` interface, which is the only one his boss cares and wants to know about, his colleagues also appreciate him via his `IHappyHourFunnyAnecdoteTeller` and `IFerociousTeamFortressPlayer` interfaces. His friends rely on his `IAmAlwaysThereWhenYouNeedMe` interface and his kids crave his `IRitualSundayMorningPancakeMaker` and `ISecuringBedtimeStoryReader`, among so many others. And, of course, he has a secret `IBestLoverUnderTheSheets` interface, but that one is solely reserved for his wife's benefit.
 
-Take Dimitri, some theoritical sample of a human being. He provides a great `IBestHusbandInTheWorld` interface, but which is reserved solely for his wife's usage. He boasts a `ICertifiedPublicAccountant` interface, which is the only one his boss cares and wants to know about. However, his colleagues also appreciate his `IFunnyJokesDuringHappyHours` and `IFerociousTeamFortressGamer` interfaces. His friends rely on his `IAmAlwaysThereWhenYouNeedMe` interface. His kids crave his 
+# Manly Abstractions
 
 
+
+# Natural Abstractions
+
+# C# Abstractions
+
+## Delegates, Actions and Functions
+
+## Abstract Base Classes
+
+## Interfaces
+
+# The Interface Segregation Principle (or the I of SOLID Principles)
 
 # Where is Abstraction?
 
