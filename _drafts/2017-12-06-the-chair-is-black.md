@@ -12,49 +12,109 @@ categories: welcome mathieu
 
 I recall as a teenager being totally absorbed by the reading of a great 1948 sci-fi novel by A. E. van Vogt named [The World of Null-A](https://en.wikipedia.org/wiki/The_World_of_Null-A), in which the amnesic main character, Gilbert Gosseyn, discovers he has grown a second brain allowing him to memorize scenes with extreme detail and precision. He can later teleport himself back to those places by simply evoking its photographic memories. He discovers that perceiving things in their finest details is the secret art of *non-Aristotelian logic*, mastered solely by the peaceful and discreet detective people of Venus.
 
-Van Vogt proposes that, according to *non-Aristotelian logic*, objects should not be reduced to their simplest attributes, but rather considered as rich and vastly complex realities. For example, he says that stating *the chair is black* is reductionist, because the chair is certainly many more things than just *black*. It might, all at once, be *shiny*, *tall*, *wooden*, *art-deco*, *fragile*, *worn*, *hand-made*, *slightly chipped at the bottom of one leg*… well, you get the point.
+As I remember, Van Vogt advanced that, according to *non-Aristotelian logic*, objects should not be reduced to their simplest attributes, but rather considered as rich and vastly complex realities. For example, he says that stating *the chair is black* is reductionist, because the chair is certainly many more things than just *black*. It might, all at once, be *shiny*, *tall*, *wooden*, *art-deco*, *fragile*, *worn*, *hand-made*, *slightly chipped at the bottom of one leg*… well, you get the point.
 
-Indeed. For instance, in software development, cultivating a keen sense of details is definitely a great asset. However, let's face it, we are not gifted with Gilbert Gosseyn's second brain, and neither can we embrace a highly complex system in our mind, all at once. We need to dissect, subdivide and simplify such complexity into manageable pieces, interfaced together through convenient *abstractions*.
+And that's an interesting point to make, philosophically speaking. Applied to software design, we could take it as advice for considering problems holistically, with a fine understanding of their very details. However, I would argue that, conversely, once you have that global picture in mind, the role of a software designer or architect is precisely to break up and reduce complex problems into smaller conceptual chunks.
 
-# But What *is* Abstraction?
+Not being gifted with Gilbert Gosseyn's second brain, we need to dissect, simplify and distil a potentially infinite reality into much less exhaustive (though workable) *abstractions*.
 
-Abstraction, from the Latin *abs* (away from) and *trahere* (to draw), is the reduction of something to a set of essential characteristics.
+# But what exactly *is* abstraction?
 
-However, the notion of what should be considered essential highly depends on the *context*. Completely different characteristics might be drawn from the same entity in different contexts.
+Formally, *abstraction* comes from the Latin *abs* (away from) and *trahere* (to draw) and is the reduction of something to a set of essential characteristics. But let me try and put it in a very code-centric way:
 
-Take *Liam*, some theoritical sample of a human being. While he boasts an `ICertifiedPublicAccountant` interface, which is the only one his boss cares and wants to know about, his colleagues also appreciate him via his `IHappyHourFunnyAnecdoteTeller` and `IFerociousTeamFortressPlayer` interfaces. His friends rely on his `IAmAlwaysThereWhenYouNeedMe` interface and his kids crave his `IRitualSundayMorningPancakeMaker` and `ISecuringBedtimeStoryReader`, among so many others. And, of course, he has a secret `IBestLoverUnderTheSheets` interface, but that one is solely reserved for his wife's benefit.
+> An abstraction is a simplified representation of some entity, purposefully chosen for a specific context, allowing another entity to relate to it, yet without coupling them together.
 
-# Manly Abstractions
+Wow, that's a lot to take in at once, so let's take it apart...
+
+## It's a simplified, context-specific representation
+
+It does not (nor should it try to) capture the entity in its whole, with all its capabilities and glory. It only represents a very limited subset of its characteristics. However, *which* characteristics should be selected depends on the *context* (in other words, the *intention* or *purpose*).  Completely different subsets might be drawn from the same entity in different contexts.
+
+>  Let's take *Liam*, some lovely fictitious human being, and see the various abstractions he exposes, in different contexts (in the form of C# interfaces!) While he boasts an `ICertifiedPublicAccountant` interface, which is the only one his boss cares and wants to know about, his colleagues also appreciate him via his `IFerociousTeamFortressPlayer` interfaces. His friends rely on his `IAmAlwaysThereWhenYouNeedMe` interface and his kids crave his `IRitualSundayMorningPancakeMaker` and `ILovelyBedtimeStoryReader`, among so many others. And, of course, he has a secret `IBestLoverUnderTheSheets` interface, but that one is solely reserved to his wife's benefits. And, ultimately, as all fellow human beings, he has the dreadly `IDisposable` interface, for his final hour.
+
+## It allows things to connect or relate
+
+An abstraction is intended to *connect* - at the same time as *isolate* - two different parties, allowing them to interact and collaborate via a straightforward channel, while preserving as much independence between them as possible, allowing either one to be replaced without much affecting the other. Those two parties and the abstraction between them can take on different names, such as client-(API)-server, consumer-(contract)-service, subscriber-(subscription)-publisher, employer-(job title)-employee, listener-(speech)-speaker, usage-(interface)-implementation...
+
+## Yet keeps them apart
+
+without letting their respective details make them dependent upon each other.
+
+## It allows to replace either one
+
+Dependency Injection
+
+Strategies
+
+## It allows to intercept and/or delegate
+
+Decorators
+
+Composites
 
 
 
-# Natural Abstractions
+## Man creates abstractions (because they are useful)
 
-# C# Abstractions
+And we sometimes refer to them as interfaces, protocoles, standards, contracts, languages, idioms, job titles, buttons, control panels, etc.
 
-## Delegates, Actions and Functions
+Any kind of interface, physical or virtual, is an abstraction, starting with your remote's *play* button, all the way to your oven's control panel. Even your fridge's light switch is an abstraction of the door's actual *open* or *close* state, allowing the light to turn on or off along with the door opening or closing. And it's really just an *abstraction* of that concept - *not the real thing* - because if you barely open the door, the light won't turn on yet, even if the door is actually *open*. You may also replace the door with any other door, and the light switching mechanism will work just as well. And, as a kid, you surely must have enjoyed fooling the light into thinking the door was closed by pressing your finger against the switch (yeah right, don't tell me you never did!)
 
-## Abstract Base Classes
+## Nature creates abstractions (because they are useful)
 
-## Interfaces
+Anything that interfaces between two parties and conveys meaning is a form of abstraction. There are countless examples in nature and our body.
 
-# The Interface Segregation Principle (or the I of SOLID Principles)
+Our nerves...
 
-# Where is Abstraction?
+Cells, hormones and proteins...
 
-Or, should we ask, where is it *not*? 
+## Abstractions in C# #
 
-Societies are defined as abstractions, with governments, institutions, demographics and groups assuming different activities and duties, interacting together through implicit - as much as explicit - rules and conventions.
+Most programming language constructs are forms of abstraction.
 
-Companies are built upon abstractions, with every employee being assigned an abstract role (though with a *concrete* job description). All collaborate with each others and circulate information via simplified interfaces, (hopefully) not having to care about the fine details of how their colleagues will then perform their jobs.
+In C#, interfaces, methods, delegates and lambdas all expose some operations that can be performed, isolating the *who* wants them to be performed (and *why* and *when*) from *who* is actually going to perform them (and especially *how*).
 
-To revisit the human relation analogy, just consider a moment the various inter*faces* we present to the different people in our life: bosses, coworkers, friends, parents, kids, siblings, lovers. We very selectively abstract away a lot of details about ourselves and present people only what is meaningful and useful to the specific kind of relationship we have with them. And we do that not because we are secretive, but really because it just wouldn't work otherwise.
+The most powerful and useful form is *interfaces*, so I will especially focus on them.
 
-However, abstraction is not just some clever human invention. It is actually omnipresent in the universe and is essential to the formation of any complex system out of simpler ones.
+## The interface segregation principle (or *small is beautiful*)
 
-Think about our body. Organs are not all linked up together nor do they need to know about everything that is happening in our body. Conceivably, our pancreas does not care about our current heartbeat rate, but should clearly be well informed on our blood sugar level. Each organ has very specific (though numerous) abstract interfaces with the rest of the body in the form of veins, nerves, hormones and enzymes, that convey only the essential set of information for it to perform its duty.
+Our dear friends at [Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle) have this to say:
 
-And if we zoomed down to the cellular, molecular, atomic and sub-atomic levels, we would certainly find the same ubiquitous abstraction pattern repeating itself over and over.
+> The **interface-segregation principle** (**ISP**) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. […] ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy.
+
+More concisely, I would say:
+
+>  Smaller interfaces are easier to implement, consume and understand and, as such, are more usable, reusable, flexible and pluggable.
+
+And I would even dare advance that, generally-speaking:
+
+> The level of abstraction of an interface is *inversely* proportional to its complexity.
+
+That complexity can be roughly measured in function of the number of members it contains, as well as the number and complexity of parameters in its methods.
+
+In other words, the power of an interface resides in its simplicity. Indeed, *Small Is Beautiful*.
+
+Let's start with a real-world example
+
+- Ex: The doorbell is a great and super useful abstraction
+
+  - Everybody knows how to use it and even expect it, no matter which house they go to
+  - Everybody knows what it means and what to do when the doorbell rings, even in someone else’s house.
+  - One of the reasons it’s so useful is its simplicity
+
+  Abstraction inversely proportional to complexity
+
+  - The level of abstraction of an interface is inversely proportional to its number of methods, and to the number and complexity of parameters in those methods.
+  - The most abstract interface would include a single method with no parameters
+  - Ex: IDoorbell.Ring()
+  - Ex: IDisposable
+  - In fact, even more abstract would be an empty interface, whose only presence is sufficient to carry much meaning
+  - Not much expressive and rich
+  - But highly useful and powerful, precisely *because* of that simplicity
+
+### About SOLID principles
+
+The *ISP* is only one of the five [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), which are at the core of understandable, flexible and maintainable software design. If you don't know them, I would strongly recommend you take the time to learn and put them in practice as much as possible in your projects. I will come back to some of those principles in future blog posts.
 
 # Conclusion
 
