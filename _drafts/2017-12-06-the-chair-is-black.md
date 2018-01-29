@@ -8,6 +8,7 @@ class: post-template
 subclass: 'post tag-getting-started'
 author: mathieu
 categories: welcome mathieu
+typora-root-url: ../assets
 ---
 
 I recall as a teenager being totally absorbed by the reading of a great 1948 sci-fi novel by A. E. van Vogt named [The World of Null-A](https://en.wikipedia.org/wiki/The_World_of_Null-A), in which the amnesic main character, Gilbert Gosseyn, discovers he has grown a second brain allowing him to memorize scenes with extreme detail and precision. He can later teleport himself back to those places by simply evoking its photographic memories. He discovers that perceiving things in their finest details is the secret art of *non-Aristotelian logic*, mastered solely by the peaceful and discreet detective people of Venus.
@@ -46,7 +47,7 @@ When entities know each other only via abstract interfaces, we say they are *loo
 
 Of course, both the consuming and the implementing entities depend upon the abstraction itself, that is how they can relate. However, they don't depend directly on one another.
 
-In fact, that is precisely what the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) (the fifth SOLID principle) states:
+In fact, that is precisely what the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) states:
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
@@ -74,13 +75,15 @@ And we sometimes refer to them as interfaces, protocoles, standards, contracts, 
 
 Any kind of interface, physical or virtual, is an abstraction, starting with your remote's *play* button, all the way to your oven's control panel. Even your fridge's light switch is an abstraction of the door's actual *open* or *close* state, allowing the light to turn on or off along with the door opening or closing. And it's really just an *abstraction* of that concept - *not the real thing* - because if you barely open the door, the light won't turn on yet, even if the door is actually *open*. You may also replace the door with any other door, and the light switching mechanism will work just as well. And, as a kid, you surely must have enjoyed fooling the light into thinking the door was closed by pressing your finger against the switch (yeah right, don't tell me you never did!)
 
-## Nature creates abstractions (because they are useful)
+## Nature creates abstractions (because they are essential)
 
-Anything that interfaces between two parties and conveys meaning is a form of abstraction. There are countless examples in nature and our body.
+Anything that interfaces between two parties and conveys meaning is a form of abstraction. There are countless examples in nature. In our body, nerves carry information in an abstract way. And enzymes rely entirely on abstractions when they need to interact with substrates. They expose *binding sites* with very specific electrostatic conformations/shapes (we could say *they consume specific interfaces*). Substrate molecules have corresponding  conformations (or *they implement such interfaces*), allowing them to snap into binding sites and undergo chemical reactions.
 
-Our nerves...
+<img src="/images/diagrams/enzyme-binding.png" alt="Enzyme Binding" style="height: 450px"/>
 
-Cells, hormones and proteins...
+Enzymes relate to substrate only through the abstraction of their electrostatic conformations. The enzymes could not tell the substrate apart from another molecule with the same conformation. And that's exactly what we take advantage of to create inhibiting drugs, with the exact same conformation as some substrate, which it prevents from being processed by the enzyme by binding in its place.
+
+<img src="/images/diagrams/inhibiting-drug.png" alt="Inhibiting Drug" style="height: 450px"/>
 
 ## Abstractions in C# #
 
@@ -100,7 +103,9 @@ More concisely, I would say:
 
 >  Smaller interfaces are easier to implement, consume and understand and, as such, are more usable, reusable, flexible and pluggable.
 
-And I would even dare advance that, generally-speaking:
+### Complexity vs flexibility
+
+I would dare advance that, as a rule of thumb:
 
 > The level of abstraction of an interface is *inversely* proportional to its complexity.
 
@@ -108,29 +113,19 @@ That complexity can be roughly measured as a function of the number of members i
 
 In other words, the power of an interface resides in its simplicity. Small *is* indeed beautiful.
 
-Let's start with a real-world example
-
-- Ex: The doorbell is a great and super useful abstraction
-
-  - Everybody knows how to use it and even expect it, no matter which house they go to
-  - Everybody knows what it means and what to do when the doorbell rings, even in someone else’s house.
-  - One of the reasons it’s so useful is its simplicity
-
-  Abstraction inversely proportional to complexity
-
-  - The level of abstraction of an interface is inversely proportional to its number of methods, and to the number and complexity of parameters in those methods.
-  - The most abstract interface would include a single method with no parameters
-  - Ex: IDoorbell.Ring()
-  - Not much expressive and rich
-  - But highly useful and powerful, precisely *because* of that simplicity
-
 One of the simplest - almost deceiving - interfaces in the CLR is `IDisposable`, which only exposes a single `Dispose()` method without parameters. It is not, in itself, rich or expressive, however it is precisely *that* simplicity which makes it so powerful. Hundreds of CLR types implement it, the `using` statement leverages it, and even ReactiveX has elected it as the tool of choice for unsubscribing from arbitrarily complex chains of observables. It is so useful that I will probably dedicate an entire post to it in the future.
 
 The most abstract interface, however, would be an empty one, without any method or property, whose sole presence on a type is sufficient to convey meaning. Such constructs are called *marker interfaces*, because they mark a type as requiring special treatment, whatever that means in that context.
 
+### Keep implementation details out
+
+But, alone, keeping an interface small and simple is not sufficient to make it more abstract and reusable. There are other factors that come into play. *Everything that relates to implementation details should be kept out of an interface.*
+
+That includes dependencies, configuration data and constants and basically anything that would probably be irrelevant if you were to reimplement that interface entirely differently. These are implementation details and are better passed into the constructor and stored as immutable data (typically in read-only private fields). I will come back to that in a future post, about the different kinds of public surfaces on a type, because that's a very important and often overlooked subject.
+
 ### About SOLID principles
 
-The *ISP* is only one of the five [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), which are at the core of understandable, flexible and maintainable software design. If you don't know them, I would strongly recommend you take the time to learn and put them in practice as much as possible in your projects. I will come back to some of those principles in future blog posts.
+The *dependency inversion* and *interface segregation principles* are only the last two of the five [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), which are at the core of understandable, flexible and maintainable software design. If you don't know them, I strongly recommend you take the time to learn about them and try to put them into practice as much as possible in your projects. I will come back to some of those principles in future blog posts.
 
 # Conclusion
 
