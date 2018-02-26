@@ -23,79 +23,79 @@ Not being gifted with Gilbert Gosseyn's second brain, we need to dissect, simpli
 
 Formally, *abstraction* comes from the Latin *abs* (away from) and *trahere* (to draw) and is the reduction of something to a set of essential characteristics. But let me try and put it in a very code-centric way:
 
-> An abstraction is a simplified representation of some entity, purposefully chosen for a specific context, allowing another entity to relate to it, yet without coupling them together.
+> An abstraction is a simplified representation of some entity, purposefully chosen for a specific context, allowing another entity to relate to it, without yet coupling them together.
 
-Wow, that's a lot to take in at once, so let's take it apart...
+Whoa! That's a lot to take in at once, so let's take it apart...
 
-## An abstraction is a simplified, context-specific representation, not the real thing itself
+## It is a simplified representation, not the actual thing itself
 
-An abstraction does not (nor should it try to) capture the entity in its whole, with all its capabilities and glory. It only represents a very limited subset of its characteristics. However, *which* characteristics should be selected depends on the *context* (in other words, the *intention* or *purpose*).  Completely different subsets might be drawn from the same entity in different contexts.
+An abstraction does not (nor should it try to) capture the entity as a whole, in all its capabilities and glory. It only represents a very limited subset of its characteristics.
 
->  Let's take *Liam*, some lovely fictitious human being, and see the various abstractions he exposes, in different contexts (in the form of C# interfaces!) While he boasts an `ICertifiedPublicAccountant` interface, which is the only one his boss cares and wants to know about, his colleagues also appreciate him via his `IFerociousTeamFortressPlayer` interfaces. His friends rely on his `IAmAlwaysThereWhenYouNeedMe` interface and his kids crave his `IRitualSundayMorningPancakeMaker` and `ILovelyBedtimeStoryReader`, among so many others. And, of course, he has a secret `IBestLoverUnderTheSheets` interface, but that one is solely reserved to his wife's benefits.
+Take your fridge's light switch. It is a representation of the door's actual *open* or *close* state, allowing the light to turn on or off, along with the door opening or closing. But it's really just a representation of that concept — *not the real thing*.
 
-## It allows things to relate...
+As a kid, I'm sure you must have enjoyed fooling the fridge into thinking the door was closed by pressing your finger against the switch (yeah right, tell me you never did!)
 
-An abstraction is intended to *connect* two different parties. It provides a clean and straightforward channel for them to discover each other, connect, communicate and interact together. In the real world, those two parties and the abstraction between them can take on different names, such as client-(API)-server, consumer-(contract)-service, subscriber-(subscription)-publisher, employer-(job title)-employee, listener-(speech)-speaker, usage-(interface)-implementation...
+Just consider for a moment how much more complex it would be, from an engineering point of view, to let the fridge know *for sure* whether its door is open or close. Luckily, the switch abstraction is just good enough!
 
-> Take the `IFrontEndHtmlDeveloper` job title. That's a very handy abstraction. It allows a developer to advertise what he is able to achieve (he *implements* that interface) and an employer to advertise an available position (it *consumes* or has a *dependency* on that interface).  Now, imagine what would happen if we were to remove abstractions altogether and try to interact only with whole realities. The employer could not simplify things down to a straightforward job description; it would need to describe precisely *everything* the employee might be required to do in a day. And the employee, on the other end, would need to describe *everything* that constitutes what he is as a person.
+## It is context-specific
 
-## …yet, it also keeps them apart
+Okay, it's just a subset of characteristics, however, our choice of characteristics depends on the *context* (in other words, the *intention* or *purpose*).  Completely different subsets might be drawn from the same entity in different contexts.
 
-Abstraction allows entities to keep some healthy distance, by avoiding their respective implementation details to make them dependent upon each other.
+>  Take *Liam*, some lovely fictitious human being, and see the various abstractions he exposes, in different contexts (in the form of C# interfaces!) While he boasts an `ICertifiedPublicAccountant` interface, which is the only one his boss cares and wants to know about, his colleagues particularly appreciate his `IFoosballPlayer` interface at lunch-time, his friends rely on his `IListener` interface and his kids crave his `IPancakeMaker` interface on Sunday mornings and his `IStoryteller` interface at bed-time, among so many others. All without mentioning his secret `IBestLoverUnderTheSheets` interface, but that one solely reserved to his wife's benefits.
+
+## It allows things to relate
+
+An abstraction is intended to *connect* two different parties. It provides a clean and straightforward channel for them to discover each other, connect and, typically, communicate and interact together.
+
+In the real and virtual worlds, those two parties and the abstraction between them can take on different names, such as client-(API)-server, consumer-(contract)-service, subscriber-(subscription)-publisher, employer-(job title)-employee, listener-(speech)-speaker, usage-(interface)-implementation…
+
+> Take the `IWebDeveloper` job title. That is a very handy abstraction. It allows a developer to advertise what he is able to achieve (he *implements* that interface) and an employer to advertise an available position (it *consumes* or has a *dependency* on that interface).  Now, imagine what would happen if we were to remove abstractions altogether and try to interact only with whole realities. The employer could not simplify things down to a straightforward job description; it would need to describe precisely *everything* the employee might be required to do in a day. And the employee, on the other end, would need to describe *everything* that constitutes what he is as a person.
+
+## Yet keeps them independent
+
+Abstraction allows entities to keep some healthy distance from each other, by avoiding their respective implementation details from becoming entangled and dependent.
 
 When entities know each other only via abstract interfaces, we say they are *loosely coupled*, as opposed to entities that depend on specific other entities and their implementation details, which would be *strongly coupled*.
 
-Of course, both the consuming and the implementing entities depend upon the abstraction itself, that is how they can relate. However, they don't depend directly on one another.
+Of course, both the consuming and the implementing entities depend upon the abstraction itself — that is how they can relate. However, they don't depend directly upon one another.
 
-In fact, that is precisely what the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) states:
+Actually, that is precisely what the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) states:
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
-That loose-coupling introduces an unlimited world of flexibility and possibilities, which brings us to our two next points...
+That loose coupling introduces an unlimited world of flexibility and possibilities, which brings us to our next point…
 
-## It allows to replace either end
+## It allows to replace, impersonate, intercept, observe, delegate…
 
+Swell! Sounds like a riveting *John le Carré*'s espionage novel, where you never know who you (really) are talking to, and how the information you provide will be used. But, as opposed to espionage, in software development that is actually the key to flexible and reusable designs and is essential to approaches like dependency injection and to most design patterns, such as the *strategy*, *proxy*, *decorator* and *composite*.  More on those (exciting!) topics in a later post.
 
+## Humans create abstractions (all the time)
 
-Dependency Injection
+We thrive on abstractions, whether they be physical, virtual or merely conceptual. They are at the core of science, technology, society and progress. We sometimes refer to them as interfaces, protocoles, standards, contracts, languages, idioms, job titles, buttons, etc.  Without them, we could not accomplish much.
 
-Strategies
+But, let's not tap ourselves in the back just yet. Humans are not the ultimate inventors of abstraction.  It has existed long before we came to crawl this earth.
 
-## It allows to intercept and/or delegate
+## Nature creates abstractions (for the same reasons we do)
 
-Decorators
-
-Composites
-
-
-
-## Man creates abstractions (because they are useful)
-
-And we sometimes refer to them as interfaces, protocoles, standards, contracts, languages, idioms, job titles, buttons, control panels, etc.
-
-Any kind of interface, physical or virtual, is an abstraction, starting with your remote's *play* button, all the way to your oven's control panel. Even your fridge's light switch is an abstraction of the door's actual *open* or *close* state, allowing the light to turn on or off along with the door opening or closing. And it's really just an *abstraction* of that concept - *not the real thing* - because if you barely open the door, the light won't turn on yet, even if the door is actually *open*. You may also replace the door with any other door, and the light switching mechanism will work just as well. And, as a kid, you surely must have enjoyed fooling the light into thinking the door was closed by pressing your finger against the switch (yeah right, don't tell me you never did!)
-
-## Nature creates abstractions (because they are essential)
-
-Anything that interfaces between two parties and conveys meaning is a form of abstraction. There are countless examples in nature. In our body, nerves carry information in an abstract way. And enzymes rely entirely on abstractions when they need to interact with substrates. They expose *binding sites* with very specific electrostatic conformations/shapes (we could say *they consume specific interfaces*). Substrate molecules have corresponding  conformations (or *they implement such interfaces*), allowing them to snap into binding sites and undergo chemical reactions.
+Anything that interfaces between two parties, while conveying some kind of meaning is a form of abstraction. There are countless examples in nature and in our body. For example, enzymes rely entirely on abstractions when they need to interact with substrates. They expose *binding sites* with very specific electrostatic conformations/shapes (we could say *they consume specific interfaces*). Substrate molecules have corresponding  conformations (*they implement those interfaces*), allowing them to snap into binding sites and undergo chemical reactions.
 
 <img src="/images/diagrams/enzyme-binding.png" alt="Enzyme Binding" style="height: 450px"/>
 
-Enzymes relate to substrate only through the abstraction of their electrostatic conformations. The enzymes could not tell the substrate apart from another molecule with the same conformation. And that's exactly what we take advantage of to create inhibiting drugs, with the exact same conformation as some substrate, which it prevents from being processed by the enzyme by binding in its place.
+Enzymes relate to substrate only through the abstraction of their electrostatic conformations. They could not tell the substrate apart from another molecule with the same conformation. And that is exactly what we take advantage of to create inhibiting drugs, which expose the same conformation as some substrate and prevent it from being processed by binding with the enzyme in its place.
 
 <img src="/images/diagrams/inhibiting-drug.png" alt="Inhibiting Drug" style="height: 450px"/>
+
+Our immune system also relies on abstractions. Instead of having to memorize the infinitely complex structures of disease agents, it simply focuses on their signatures (*interfaces*).  Vaccines leverage that abstraction, by mimicking disease agents (*implementing the same interface*) and stimulating the immune system to build defenses against them. 
 
 ## Abstractions in C# #
 
 Most programming language constructs are forms of abstraction.
 
-In C#, interfaces, methods, delegates and lambdas all expose some operations that can be performed, isolating the *who* wants them to be performed (and *why* and *when*) from *who* is actually going to perform them (and especially *how*).
-
-The most powerful and useful form is *interfaces*, so I will especially focus on them.
+In C#, interfaces, methods, delegates and lambdas all expose some operations that can be invoked, while isolating the *who* wants that to happen (and *why* and *when*) from *how* it will happen.
 
 ## The interface segregation principle (or *small is beautiful*)
 
-Our dear friends at [Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle) have this to say:
+Our friends at [Wikipedia](https://en.wikipedia.org/wiki/Interface_segregation_principle) have this to say:
 
 > The **interface-segregation principle** (**ISP**) states that no client should be forced to depend on methods it does not use. ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. […] ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy.
 
@@ -105,7 +105,7 @@ More concisely, I would say:
 
 ### Complexity vs flexibility
 
-I would dare advance that, as a rule of thumb:
+I would dare advance that, generally speaking:
 
 > The level of abstraction of an interface is *inversely* proportional to its complexity.
 
@@ -113,19 +113,23 @@ That complexity can be roughly measured as a function of the number of members i
 
 In other words, the power of an interface resides in its simplicity. Small *is* indeed beautiful.
 
-One of the simplest - almost deceiving - interfaces in the CLR is `IDisposable`, which only exposes a single `Dispose()` method without parameters. It is not, in itself, rich or expressive, however it is precisely *that* simplicity which makes it so powerful. Hundreds of CLR types implement it, the `using` statement leverages it, and even ReactiveX has elected it as the tool of choice for unsubscribing from arbitrarily complex chains of observables. It is so useful that I will probably dedicate an entire post to it in the future.
+One of the simplest — almost deceivingly simple — interfaces in the CLR is `IDisposable`, which only exposes a single `Dispose()` method without parameters. It is not, in itself, rich or expressive, however it is precisely *that* simplicity which makes it so powerful. Hundreds of CLR types implement it, the `using` statement leverages it, and even ReactiveX has elected it as the tool of choice for unsubscribing from arbitrarily complex chains of observables. It is so useful that I will most probably dedicate an entire post to it in the future.
 
-The most abstract interface, however, would be an empty one, without any method or property, whose sole presence on a type is sufficient to convey meaning. Such constructs are called *marker interfaces*, because they mark a type as requiring special treatment, whatever that means in that context.
+> The most abstract interface, however, would be an empty one, without any method or property, whose sole presence on a type is sufficient to convey meaning. Such constructs are called *marker interfaces*, because they mark a type as requiring special treatment, whatever that means in that context.
+
+That idea of minimalism and simplicity will become crucial when we will approach Fluent APIs in a future post and see how to create concise and expressive syntaxes using decorators and extension methods.
 
 ### Keep implementation details out
 
-But, alone, keeping an interface small and simple is not sufficient to make it more abstract and reusable. There are other factors that come into play. *Everything that relates to implementation details should be kept out of an interface.*
+Nevertheless, keeping an interface small and simple is not sufficient in itself to make it more abstract and reusable. There are other factors that come into play. So I would add that:
 
-That includes dependencies, configuration data and constants and basically anything that would probably be irrelevant if you were to reimplement that interface entirely differently. These are implementation details and are better passed into the constructor and stored as immutable data (typically in read-only private fields). I will come back to that in a future post, about the different kinds of public surfaces on a type, because that's a very important and often overlooked subject.
+> Everything that relates to implementation details should be kept out of an interface.
+
+That includes dependencies, configuration data and constants (and basically anything that would probably be irrelevant if you were to reimplement that interface entirely differently). These implementation details are better passed into the constructor and stored as immutable data (typically in read-only private fields). We will eventually come back to that, because that's a very important and often overlooked subject.
 
 ### About SOLID principles
 
-The *dependency inversion* and *interface segregation principles* are only the last two of the five [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), which are at the core of understandable, flexible and maintainable software design. If you don't know them, I strongly recommend you take the time to learn about them and try to put them into practice as much as possible in your projects. I will come back to some of those principles in future blog posts.
+The *dependency inversion* and *interface segregation principles* are only the *D* and *I* of the five [S.O.L.I.D. principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)), which are at the core of understandable, flexible and maintainable software design. If you don't know them already, I strongly recommend you take the time to learn about them and try to put them into practice as much as possible in your projects. More on those in future posts.
 
 # Conclusion
 
