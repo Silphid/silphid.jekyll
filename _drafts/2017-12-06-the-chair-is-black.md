@@ -49,8 +49,6 @@ An abstraction is intended to *connect* two different parties. It provides a cle
 
 In the real and virtual worlds, those two parties and the abstraction between them can take on different names, such as client-(API)-server, consumer-(contract)-service, subscriber-(subscription)-publisher, employer-(job title)-employee, listener-(speech)-speaker, usage-(interface)-implementation…
 
-> Take the `IWebDeveloper` job title. That is a very handy abstraction. It allows a developer to advertise what he is able to achieve (he *implements* that interface) and an employer to advertise an available position (it *consumes* or has a *dependency* on that interface).  Now, imagine what would happen if we were to remove abstractions altogether and try to interact only with whole realities. The employer could not simplify things down to a straightforward job description; it would need to describe precisely *everything* the employee might be required to do in a day. And the employee, on the other end, would need to describe *everything* that constitutes what he is as a person.
-
 ## Yet keeps them independent
 
 Abstraction allows entities to keep some healthy distance from each other, by avoiding their respective implementation details from becoming entangled and dependent.
@@ -133,12 +131,6 @@ The *dependency inversion* and *interface segregation principles* are only the *
 
 # Conclusion
 
-I believe that the mastery of navigating levels of abstraction and constantly figuring what is truly relevant in every given situation is probably one of the most important skills a programmer could develop throughout his/her career.
+Developing a sixth sense for what is truly relevant in each given situation, versus what should be hidden away as implementation details, is probably one of the most vital skills in a developer's toolbox. And that will serve as main thread in this blog, while I share my thoughts and findings on all sorts of software development topics, from patterns to techniques and best practices, through technologies and frameworks.
 
-In this blog, I will share my thoughts and findings on all sorts of software development topics, from patterns to best practices, through technologies and frameworks, but most of the time with abstraction as an underlying thread.
-
-My next post, I promise, will shift from this very high, philosophical level, to the much lower and more concrete level of C#. More precisely, what abstraction levels are built into C# and how to take advantage of them.
-
-Maybe that Van Vogt's message - as opposed to being interpreted as saying abstractions are bad - should simply help us illuminate how much they are present in our daily lives, how much we rely on them for even the smallest things we do, yet keeping in mind that reality is vastly richer and endless. 
-
-In the meantime, go on, contemplate the numerous abstractions that surround us and, next time someone asks you where to sit, simply reply *the black chair*.
+Van Vogt enlightens how much we take abstractions for granted and often mistake them for reality. Nevertheless, when you design your next sophisticated *chair* class, don't feel bad if its interface simply says *the chair is black.*
