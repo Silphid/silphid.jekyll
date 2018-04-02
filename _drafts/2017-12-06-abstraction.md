@@ -35,7 +35,7 @@ An abstraction does not (nor should it try to) capture the entity as a whole, in
 
 Take your fridge's light switch for example. It represents the door's state; the light turning on or off depending on whether the door is opened or closed. However, it's really just a *representation* of that state — *not the real thing*.
 
-![fridge-light-switch](/Users/mathieu/Dev/Silphid/silphid.jekyll/assets/images/diagrams/abstraction-fridge-light-switch.jpg)
+<img src="/images/diagrams/abstraction-fridge-light-switch.jpg" alt="Fridge Light Switch" style="height: 250px"/>
 
 I'm sure, as a kid, you must have enjoyed fooling the fridge into thinking its door was closed by pressing your finger against the switch (yeah right, tell me you never did this!). This was only possible because the switch was not the actual state, just a mere representation of it.
 
@@ -81,13 +81,13 @@ Nature always takes the straightest, most efficient path. Faced with a problem l
 
 Take the enzymes in our body, which rely entirely on abstractions when they need to interact with substrates. They expose *binding sites* with very specific electrostatic conformations/shapes (we could say *they consume specific interfaces*). Substrate molecules have corresponding conformations (*they implement those interfaces*), allowing them to snap into binding sites and undergo chemical reactions.
 
-<img src="/images/diagrams/abstraction-enzyme-binding.png" alt="Enzyme Binding" style="height: 450px"/>
+<img src="/images/diagrams/abstraction-enzyme-binding.png" alt="Enzyme Binding" style="height: 350px"/>
 
 ### Enzyme binding
 
 Enzymes relate to substrates only through the abstraction of their electrostatic conformations. They wouldn't be able to tell a substrate apart from another molecule with the same conformation. This is exactly what we take advantage of when creating inhibitor drugs, which sport the same conformation as a given substrate, preventing the latter from being processed by binding to the enzyme in its place.
 
-<img src="/images/diagrams/abstraction-inhibiting-drug.png" alt="Inhibiting Drug" style="height: 450px"/>
+<img src="/images/diagrams/abstraction-inhibiting-drug.png" alt="Inhibiting Drug" style="height: 350px"/>
 
 ### Inhibitor drugs
 
