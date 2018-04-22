@@ -8,12 +8,12 @@ class: post-template
 subclass: 'post tag-getting-started'
 author: mathieu
 categories: welcome mathieu
-typora-root-url: ../assets
+typora-root-url: ..
 ---
 
-*In this post (my first blog post ever!), we will first have a look at abstraction — what it is, how it works and where to find it when you go shopping — and then go through a few principles and best practices of how to apply it in your software design. Some concepts will be introduced that I will be deepening in following posts.* 
+*I'm convinced that mastering the multi-headed beast called "Abstraction" is the fundamental key to what I like to call "mindful software design". That is why I wanted my first blog post (ever) to establish that concept as foundation for the (hopefully many) other posts to come. In the first part of this article, we will have a rather philosophical look at abstraction — what it is, how it works and where you can find it when you go shopping — and, in the second part, we will get more practical and go through a few principles and best practices that make for great software designs.*
 
-I recall as a teenager being totally absorbed by a great 1948 sci-fi novel written by A. E. Van Vogt entitled [The World of Null-A](https://en.wikipedia.org/wiki/The_World_of_Null-A), in which the amnesic main character, Gilbert Gosseyn, discovers he has grown a second brain allowing him to memorize scenes with extreme detail and precision. He later teleports himself to these places by simply evoking photographic memories. He discovers that perceiving things in their finest detail is the secret art of *non-Aristotelian logic*, mastered solely by the peaceful and discreet detective people of Venus.
+I recall as a teenager being totally absorbed by a great 1948 sci-fi novel written by A. E. van Vogt entitled [The World of Null-A](https://en.wikipedia.org/wiki/The_World_of_Null-A), in which the amnesic main character, Gilbert Gosseyn, discovers he has grown a second brain allowing him to memorize scenes with extreme detail and precision. He later teleports himself to these places by simply evoking photographic memories. He discovers that perceiving things in their finest detail is the secret art of *non-Aristotelian logic*, mastered solely by the peaceful and discreet detective people of Venus.
 
 As I remember, Van Vogt explains that, according to *non-Aristotelian logic*, objects should not be reduced to their simplest attributes but rather considered as rich and vastly complex realities. For example, stating that "*the chair is black"* is reductionist because the chair is certainly many more things than *black*. It might, all at once, be *shiny*, *tall*, *wooden*, *art-deco*, *fragile*, *worn*, *hand-made*, *slightly chipped at the bottom of one leg*… well, you get the point.
 
@@ -35,7 +35,7 @@ An abstraction does not (nor should it try to) capture the entity as a whole, in
 
 Take your fridge's light switch for example. It represents the door's state; the light turning on or off depending on whether the door is opened or closed. However, it's really just a *representation* of that state — *not the real thing*.
 
-<img src="/images/diagrams/abstraction-fridge-light-switch.jpg" alt="Fridge Light Switch" style="height: 250px"/>
+<img src="/assets/images/diagrams/abstraction-fridge-light-switch.jpg" alt="Fridge Light Switch" style="height: 250px"/>
 
 I'm sure, as a kid, you must have enjoyed fooling the fridge into thinking its door was closed by pressing your finger against the switch (yeah right, tell me you never did this!). This was only possible because the switch was not the actual state, just a mere representation of it.
 
@@ -59,7 +59,7 @@ In the real and virtual worlds, two entities and the abstraction between them ca
 
 An abstraction allows entities to keep a healthy distance from each other by preventing their respective implementation details from becoming entangled and thus, dependent.
 
-When entities know each other solely via abstract interfaces, we refer to them as *loosely coupled* (as opposed to entities that depend on other specific entities and their implementation details, which are said to be *strongly coupled*). Of course, loosely coupled entities *do* depend upon the abstraction through which they relate, which is exactly what the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) encourages:
+When entities know each other solely via abstract interfaces, we refer to them as *loosely coupled* (as opposed to entities that depend on other specific entities and their implementation details, which are said to be *strongly coupled*). Of course, loosely coupled entities *do* depend upon the abstraction through which they relate, which is exactly what the [dependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) dictates:
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
@@ -67,31 +67,27 @@ Such loose coupling introduces an unlimited world of flexibility and possibiliti
 
 ## It allows for replacement, impersonation, interception, observation, delegation…
 
-Swell! Sounds like a riveting *John le Carré* espionage novel where you never know who you (really) are talking to, and how the information you provide will be used. However, as opposed to espionage, in a software development context, that opacity is actually the key to flexible and reusable designs. It is essential to approaches like dependency injection and design patterns, such as the *strategy*, *proxy*, *decorator* and *composite*. More on all of these in a later post.
+Swell! Sounds like a riveting *John le Carré* espionage novel where you never know who you (really) are talking to, and how the information you provide will be used. However, as opposed to espionage, in a software development context, that opacity is actually the key to flexible and reusable designs. It is essential to approaches like dependency injection and design patterns, such as the *strategy*, *proxy*, *decorator* and *composite* patterns. More on all of these in a later post.
 
-## Humans create abstractions for efficiency
+## Abstractions are efficient
 
-We thrive on abstractions, whether physical, virtual or merely conceptual. They are at the core of science, technology, society and progress. We sometimes refer to them as interfaces, protocoles, standards, contracts, languages, idioms, job titles, buttons, etc. We naturally resort to them because they are efficient.
+We thrive on abstractions, whether physical, virtual or merely conceptual. They are at the core of science, technology, society and progress. We sometimes refer to them as interfaces, protocoles, standards, contracts, vocabularies, idioms, etc. We naturally resort to them because they are efficient.
 
 However, let's not pat ourselves on the back just yet. Humans are not the ultimate inventors of Abstraction, with a capital *A*. It has existed long before we came to crawl this earth.
 
-## Nature creates abstractions (for the same reason humans do)
-
-Nature always takes the straightest, most efficient path. Faced with a problem like our fridge's state, it would most probably settle for a solution as straightforward as our (now famous) light switch.
+Nature strives for the straightest, most efficient path. Faced with a problem similar to the fridge door's state, it would likely settle for a solution as straightforward as our (now famous) light switch.
 
 Take the enzymes in our body, which rely entirely on abstractions when they need to interact with substrates. They expose *binding sites* with very specific electrostatic conformations/shapes (we could say *they consume specific interfaces*). Substrate molecules have corresponding conformations (*they implement those interfaces*), allowing them to snap into binding sites and undergo chemical reactions.
 
-<img src="/images/diagrams/abstraction-enzyme-binding.png" alt="Enzyme Binding" style="height: 350px"/>
-
-### Enzyme binding
+<img src="/assets/images/diagrams/abstraction-enzyme-binding.png" alt="Enzyme Binding" style="height: 350px"/>
 
 Enzymes relate to substrates only through the abstraction of their electrostatic conformations. They wouldn't be able to tell a substrate apart from another molecule with the same conformation. This is exactly what we take advantage of when creating inhibitor drugs, which sport the same conformation as a given substrate, preventing the latter from being processed by binding to the enzyme in its place.
 
-<img src="/images/diagrams/abstraction-inhibiting-drug.png" alt="Inhibiting Drug" style="height: 350px"/>
-
-### Inhibitor drugs
+<img src="/assets/images/diagrams/abstraction-inhibiting-drug.png" alt="Inhibiting Drug" style="height: 350px"/>
 
 Our immune system also relies on abstractions. Instead of having to memorize the infinitely complex structures of disease agents, it simply focuses on their signatures (*interfaces*). Vaccines leverage these abstractions, by mimicking disease agents (*implementing the same interface*) and stimulating the immune system to build defenses against them.
+
+# Abstraction in software design
 
 ## The interface segregation principle (a.k.a. *small is beautiful*)
 
@@ -113,9 +109,9 @@ This complexity can be roughly measured as a function of the number of members i
 
 In other words, the power of an interface resides in its simplicity. Small *is* indeed beautiful.
 
-One of the simplest — almost deceivingly simple — interfaces in the CLR is `IDisposable`, which only exposes a single `Dispose()` method without parameters. It is not in itself rich or expressive; however, it is precisely *this* simplicity which makes it so powerful. Hundreds of CLR types implement it; the using statement leverages it; even the designers of Reactive Extensions have selected it as the tool of choice for unsubscribing from arbitrarily complex chains of observables. It is so useful that I plan on dedicating an entire post to it in the future.
+One of the simplest — almost deceivingly simple — interfaces in the .NET CLR is `IDisposable`, which only exposes a single `Dispose()` method without parameters. It is not in itself rich or expressive; however, it is precisely *this* simplicity which makes it so powerful. Hundreds of .NET types implement it; the `using` statement leverages it; even the designers of Reactive Extensions have selected it as the tool of choice for unsubscribing from arbitrarily complex chains of observables. It is so useful that I plan on dedicating an entire post to it in the future.
 
-The most abstract interface; however, would be an empty one — without any method or property — whose sole presence on a type is sufficient enough to convey meaning. Such constructs are called *marker interfaces*, because they *mark* a type as requiring special treatment, whatever that means in that context.
+The most abstract interface; however, would be an empty one — without any method or property — whose sole presence on a type is sufficient to convey meaning. Such constructs are called *marker interfaces*, because they *mark* a type as requiring special treatment, whatever that means in that context.
 
 Those ideas of minimalism and simplicity will become crucial when we tackle Fluent APIs in a future article and examine how to create concise and expressive syntaxes using decorators and extension methods.
 
@@ -125,7 +121,7 @@ Nevertheless, keeping an interface small and simple is not sufficient in itself 
 
 > Everything relating to implementation details should be kept out of an interface.
 
-That includes dependencies and configuration data (and basically anything that would be irrelevant if you were to re-implement that interface in a different class). These implementation details are better passed into class constructors and stored as immutable data (typically in read-only private fields). We will eventually come back to this, because it is a very important and often overlooked subject.
+That includes dependencies and configuration values (and basically anything that would be irrelevant if you were to re-implement that interface in a different class). These implementation details are better passed into class constructors and stored as immutable data (typically in read-only private fields). We will eventually come back to this, because it is a very important and often overlooked subject.
 
 ### About SOLID principles
 
