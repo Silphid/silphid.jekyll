@@ -38,7 +38,12 @@ Despite a major lack of marketing traction (being only distributed by a small sh
 
 
 > This is an excellent puzzle game that I can highly recommend. […] The levels are well thought out, and there are a good variety of puzzles. The sound effects were spot-on, and I loved our hero’s speech. The graphics were brilliant, with every episode having a distinct theme. […] If you like challenging puzzle games, you are sure to love this one.
-— [reloaded.org](http://www.reloaded.org/download/Clone/328/) (4.5 star editor ranking)
+> — [reloaded.org](http://www.reloaded.org/download/Clone/328/) (4.5 star editor ranking)
+
+
+
+> Clone […] has a unique premise that makes it a very interesting puzzle game. […] The catchy music, great interface, plus a large amount of intuitive levels ensure that you'll have Clone around on your hard-drive for some time.
+> — [oldpcgaming.net](https://www.oldpcgaming.net/clone/) (4.5 star editor ranking)
 
 # Screenshots
 
