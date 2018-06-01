@@ -28,21 +28,25 @@ Since then, over the last two decades, I've been tinkering with the Clone concep
 Despite a major lack of marketing traction (being only distributed by a small shareware publisher), the game got amazing reviews (and still does, 20 years later!)
 
 > If you enjoy creative and devilish turn-based puzzle games that never seem to run out of surprises, Clone is a game for you. With 6 huge worlds and a near endless variety of levels, it is definitely one of the best shareware puzzlers ever made.
+>
 > — [old-games.com](http://www.old-games.com/download/3557/clone)
 
 
 
 > […] I put this on the same level as Lemmings, The Incredible Machine and other great puzzlers from the nineties. It’s a game so varied and so well designed that any puzzle fan would be utterly remiss to pass it by.”
+>
 > — [escapistmagazine.com](http://escapistmagazine.com)
 
 
 
 > This is an excellent puzzle game that I can highly recommend. […] The levels are well thought out, and there are a good variety of puzzles. The sound effects were spot-on, and I loved our hero’s speech. The graphics were brilliant, with every episode having a distinct theme. […] If you like challenging puzzle games, you are sure to love this one.
+>
 > — [reloaded.org](http://www.reloaded.org/download/Clone/328/) (4.5 star editor ranking)
 
 
 
 > Clone […] has a unique premise that makes it a very interesting puzzle game. […] The catchy music, great interface, plus a large amount of intuitive levels ensure that you'll have Clone around on your hard-drive for some time.
+>
 > — [oldpcgaming.net](https://www.oldpcgaming.net/clone/) (4.5 star editor ranking)
 
 # Screenshots
