@@ -71,7 +71,9 @@ Once the development was nearly finished, I sent out a demo to a list of nearly 
 
 I started negotiating with Sirius Publishing, that was highly demanding and very little giving, but I stepped down, because of disappointing conditions. First, they had this huge, very cryptic, 30-40 page contract. And, among many worrisome clauses, they stated that the jurisdiction area in case of dispute was in the US, in their own state, whereas I reside in Canada. Also, they provided very little royalties, and that number was always getting smaller as negotiations went on. Indeed, the game was first promised to be published on its own, then on a CD along 10 other shareware titles, which number later became 40.
 
-I finally decided to go with LaserPoint Publishing, a very friendly, family-operated business, which provided high royalties on sales (30%), but unfortunately sold very few copies! At that point, I only wanted the game to be out there and wanted to avoid the fuss and expenses related to large publishers. Just for fun, you may have a peek at the [product page](http://web.archive.org/web/19970714051246/http://www.laserpoint.com:80/mswin/clone/index.html) archived with Wayback Machine.
+I finally decided to go with LaserPoint Publishing, a very friendly, family-operated business, which provided high royalties on sales (30%), but unfortunately sold very few copies! At that point, I only wanted the game to be out there and wanted to avoid the fuss and expenses related to large publishers.
+
+Just for fun, you may have a peek at the 1997 version of (now defunct) LaserPoint's [Clone promotion page](http://web.archive.org/web/19970714051246/http://www.laserpoint.com:80/mswin/clone/index.html), as archived by Wayback Machine.
 
 # Random notes, for the tech-savvies
 
