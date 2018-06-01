@@ -13,7 +13,7 @@ typora-root-url: ..
 
 ![Clone screenshot](/clone/images/clone.jpg)
 
-Back in 1996, I momentarily stepped out of college to devote myself to a wonderful 2-year journey that would take me from a simple but clever gameplay idea, to a complete game distributed by a shareware publisher.
+Back in 1995, I momentarily stepped out of college to devote myself to a wonderful 2-year journey that would take me from a simple but clever gameplay idea, to a complete game distributed by a shareware publisher.
 
 The game's special twist lies in having to control multiple blue characters — the clones — but, unlike games like Lemmings, all at once! When moving in a given direction, all clones try to imitate each others, unless they meet an obstacle. It therefore becomes crucial to use the environment wisely, in order to align the clones into certain patterns, trigger multiple mechanisms simultaneously, avoid weird and sometimes dangerous creatures and traps, and guide them to safe haven.
 
