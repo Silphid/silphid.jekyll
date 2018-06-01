@@ -19,13 +19,13 @@ The game's special twist lies in having to control multiple blue characters — 
 
 The game is composed of 6 different worlds, 125 puzzles (each with 3 hand-crafted difficulty levels), some 30 songs, and tons of blocks, contraptions, vehicles, creatures, traps and magical devices, for over 6 to 10 hours playing time.
 
-Despite its lack of marketing traction (being only distributed by a small shareware publisher), the game got amazing reviews (and still does, 20 years later!)
-
-Clone became for me a sort of informal diploma, which landed me my first job as developer, as it demonstrated my self-motivation, discipline and skills. The kind of story that is possible in the software industry.
+Clone became for me a sort of informal diploma, which landed me my first job as developer, demonstrating my self-motivation, discipline and skills. The kind of story that happens in the software industry.
 
 Since then, over the last two decades, I've been tinkering with the Clone concept and working on some kind of sequel, creating many prototypes in 2D and 3D and on different platforms, such as Cocos2D (Objective-C) and Unity (C#). I might someday dedicate more time to that project, but right now I am focusing on my career and my family (Zoé, my fourth kid, has just been born this May 10!)
 
 # Reviews
+
+Despite a major lack of marketing traction (being only distributed by a small shareware publisher), the game got amazing reviews (and still does, 20 years later!)
 
 > If you enjoy creative and devilish turn-based puzzle games that never seem to run out of surprises, Clone is a game for you. With 6 huge worlds and a near endless variety of levels, it is definitely one of the best shareware puzzlers ever made.
 > — [old-games.com](http://www.old-games.com/download/3557/clone)
@@ -42,11 +42,44 @@ Since then, over the last two decades, I've been tinkering with the Clone concep
 
 # Screenshots
 
-<img src="/clone/images/scr00.gif" width="250px"><img src="/clone/images/scr02.gif" width="250px"><img src="/clone/images/scr01.gif" width="250px">
-
-<img src="/clone/images/scr03.gif" width="250px"> <img src="/clone/images/scr04.gif" width="250px"><img src="/clone/images/scr05.gif" width="250px">
-
-<img src="/clone/images/scr06.gif" width="250px"><img src="/clone/images/scr07.gif" width="250px"><img src="/clone/images/scr08.gif" width="250px"><img src="/clone/images/scr09.gif" width="250px"><img src="/clone/images/scr10.gif" width="250px"><img src="/clone/images/scr11.gif" width="250px">
+<style>
+.screenshots p {
+    float: none;
+    margin: 0px;
+}
+.screenshots p::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.screenshots img {
+	width: 250px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+</style>
+<div class="screenshots">
+<p>
+	<img src="/clone/images/scr00.gif">
+	<img src="/clone/images/scr02.gif">
+	<img src="/clone/images/scr01.gif">
+</p>
+<p>
+    <img src="/clone/images/scr03.gif">
+    <img src="/clone/images/scr04.gif">
+    <img src="/clone/images/scr05.gif">
+</p>
+<p>
+    <img src="/clone/images/scr06.gif">
+	<img src="/clone/images/scr07.gif">
+	<img src="/clone/images/scr08.gif">
+</p>
+<p>
+    <img src="/clone/images/scr09.gif">
+	<img src="/clone/images/scr10.gif">
+	<img src="/clone/images/scr11.gif">
+</p>
+</div>
 
 # Download
 
@@ -63,7 +96,7 @@ As a teen, I enjoyed playing block-moving puzzle games, such as Sokoban, Boulder
 
 # My best mistake ever
 
-Interestingly, the *Clone* concept came from a mistake!  While developing *Labyrinth 3*, I unwillingly placed multiple blue characters into the same level, but quickly realized that it was quite fun to control all of them at once. It didn't work perfectly at first, because characters would overlap on top of each others, so I simply fixed that and kept on experimenting with the concept. It quickly became obvious that *this* was the real game I should be developing. So I renamed the game to *Clone* and came up with different coordination challenges for those clones, like having to align themselves onto multiple switches on the floor at once.
+Interestingly, the *Clone* concept came from a mistake!  While developing *Labyrinth 3*, I unwillingly placed multiple blue characters into the same level, but quickly realized that it was quite fun to control all of them at once. It didn't work perfectly at first, because characters would overlap on top of each others, so I simply fixed that and kept on experimenting with the concept. It quickly became obvious that *this* was the real game I should be developing. So I renamed the game to *Clone* and came up with different coordination challenges for those clones, like aligning them into a certain pattern in order to trigger multiple switches on the floor at once.
 
 # Finding a publisher
 
